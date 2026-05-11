@@ -6,13 +6,13 @@ import BaseLayout from '../layouts/BaseLayout.astro';
 const pageTitle = "About Me";
 
 const identity = {
-	firstName: "Sarah",
-	country: "Canada",
-	occupation: "Technical Writer",
-	hobbies: ["photography", "birdwatching", "baseball"],
+	firstName: "Jon",
+	country: "England",
+	occupation: "Dilletante",
+	hobbies: ["navies", "science fiction", "development"],
 };
 
-const skills = ["HTML", "CSS", "JavaScript", "React", "Astro", "Writing Docs"];
+const skills = ["HTML", "CSS"];
 
 const happy = true;
 const finished = true;
@@ -23,18 +23,7 @@ const fontWeight = "bold";
 const textCase = "uppercase"
 ---
 <BaseLayout pageTitle={pageTitle}>
-  <h2>... and my new Astro site!</h2>
-
-		<p>
-			I am working through Astro's introductory tutorial. This is the
-			second page on my website, and it's the first one I built myself!
-		</p>
-
-		<p>
-			This site will update as I complete more of the tutorial, so keep
-			checking back and see how my journey is going!
-		</p>
-
+  
 		<p>Here are a few facts about me:</p>
 		<ul>
 			<li>My name is {identity.firstName}.</li>
@@ -57,11 +46,7 @@ const textCase = "uppercase"
 			{skills.map((skill) => <li class="skill">{skill}</li>)}
 		</ul>
 
-		{happy && <p>I am happy to be learning Astro.</p>}
-
-		{finished && <p>I finished this tutorial.</p>}
-
-		{goal ===3 ? <p>My goal is to finish in 3 days.</p> : <p>My goal is not 3 days.</p>}
+		
 	
 		<style is:global define:vars={{skillColor, fontWeight, textCase}}>
     		h1 {
