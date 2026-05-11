@@ -1,0 +1,62 @@
+---
+import BaseLayout from "./BaseLayout.astro";
+const { frontmatter } = Astro.props;
+const options = {
+  weekday: "long",
+  year: "numeric",
+  month: "long",
+  day: "numeric",
+};
+---
+
+<BaseLayout pageTitle={frontmatter.title}>
+    
+    <p class="caption"><em>{frontmatter.description}</em></p>
+    <img src={frontmatter.image.url}  alt={frontmatter.image.alt} />
+    <slot />
+
+    <p>posted by {frontmatter.author} on {frontmatter.pubDate.toLocaleDateString("en-GB", options)}</p>
+    
+    <div class="tags">
+        {
+            frontmatter.tags.map((tag: string) => (
+                <p class="tag">
+                    <a href={`/tags/${tag}`}>{tag}</a>
+                </p>
+            ))
+        }
+    </div>
+
+    
+
+</BaseLayout>
+
+<style>
+    .caption {
+        font-size: 1.5rem;
+    }
+
+    img {
+        max-width: 100%;
+        height: auto;
+        border-radius: 10px;
+    }
+
+    a {
+        color: #00539f;
+    }
+
+    .tags {
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+    .tag {
+        margin: 0.25em;
+        border: dotted 1px #a1a1a1;
+        border-radius: 0.5em;
+        padding: 0.5em 1em;
+        font-size: 1.15em;
+        background-color: #f8fcfd;
+    }
+</style>
