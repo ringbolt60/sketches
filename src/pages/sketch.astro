@@ -5,7 +5,7 @@ import { getCollection } from "astro:content";
 import BaseLayout from '../layouts/BaseLayout.astro';
 import BlogPost from '../components/BlogPost.astro';
 const allPosts = await getCollection("sketches");
-const pageTitle = "Pen pictures";
+const pageTitle = "Sketches";
 ---
 
 <BaseLayout pageTitle={pageTitle}>

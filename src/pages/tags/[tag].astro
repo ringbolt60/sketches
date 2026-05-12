@@ -1,4 +1,6 @@
 ---
+
+
 import { getCollection } from "astro:content";
 import BaseLayout from '../../layouts/BaseLayout.astro';
 import BlogPost from '../../components/BlogPost.astro'
@@ -26,7 +28,7 @@ const { posts } = Astro.props;
 
 ---
 <BaseLayout pageTitle={tag}>
-  <p>Posts tagged with {tag}</p>
+  <p>Sketches tagged with {tag}</p>
     <ul>
        {posts.map((post) => <BlogPost url={`/sketches/${post.id}/`} title={post.data.title}/>)}
     </ul>
