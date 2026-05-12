@@ -17,8 +17,8 @@ The German armoured ship *Baden* in the new blue-gray paint scheme of 1892 and b
 
 ### Links
 
--[The excellent Wikipedia entry](https://en.wikipedia.org/wiki/SMS_Baden_(1880))
+[The excellent Wikipedia entry](https://en.wikipedia.org/wiki/SMS_Baden_(1880))
 
--[*Baden* after reconstruction](https://commons.wikimedia.org/wiki/File:S.M._Linienschiff_Baden_-_restoration,_borderless.jpg#/media/File:S.M._Linienschiff_Baden_-_restoration,_borderless.jpg)
+[*Baden* after reconstruction](https://commons.wikimedia.org/wiki/File:S.M._Linienschiff_Baden_-_restoration,_borderless.jpg#/media/File:S.M._Linienschiff_Baden_-_restoration,_borderless.jpg)
 
  
